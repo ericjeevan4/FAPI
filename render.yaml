@@ -2,6 +2,7 @@ services:
   - type: web
     name: career-ml-api
     runtime: python
+    pythonVersion: 3.10.12  # 👈 Use Python 3.10 to match your Colab environment
     buildCommand: pip install -r requirements.txt
     startCommand: python app.py
     envVars:
